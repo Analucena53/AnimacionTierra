@@ -1,0 +1,183 @@
+/* reset */
+* {margin:0;box-sizing: border-box;}
+ul {list-style: none;padding: 0;}
+img, figure {max-width: 100%;display: block;}
+a {text-decoration: none;}
+
+/* MI TEMA */
+
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* TIERRA */
+
+.tierra{
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    box-shadow: 0 0 25px cyan,
+                inset -65px 0 50px #223a58;
+    background: url("../img/mapamundo.png") repeat #4fe1e8;
+    background-size: 200%;
+    transform: rotate(15deg);
+    transition: 0.5s;
+    
+    animation: ROTACION 20s infinite linear;
+}
+
+.tierra:hover{
+    transform: scale(1.1) rotate(15deg);  
+}
+
+@keyframes ROTACION{
+    from{background-position: right;}
+    to{background-position: left;}
+}
+
+
+.caja-datos-tierra{
+    font-family: 'Lato', sans-serif;
+    font-size:14px;
+    width: 200px;
+    height: 435px;
+    background-color: white;
+    position:absolute;
+    left:60px;
+    top:80px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+
+.tierra:hover + .caja-datos-tierra{
+    opacity: 1;}
+
+
+
+    
+/* LUNA */    
+
+.orbita-luna{
+    width: 447px;
+    height: 447px;
+    border-radius: 100%;
+    border: 1px solid white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+
+.luna{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    left: -442px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+    animation: ROTAR 10s infinite linear;
+    transform-origin: 240px;
+
+}
+
+@keyframes ROTAR{
+     to{ transform: rotate(360deg);}
+}
+
+.orbita-luna:hover{
+    border-color:rgb(88, 193, 241);
+}
+
+.orbita-luna:hover + .luna {
+    background-color:rgb(88, 193, 241);
+
+}
+
+.orbita-luna:hover ~ .caja-datos-luna{
+    opacity: 1;
+}
+
+
+.caja-datos-luna{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    width: 200px;
+    height: 435px;
+    background-color: white;
+    position: absolute;
+    left: 60px;
+    top: 80px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+/* ESTILOS DE TEXTO */
+
+h1{
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;        
+}
+
+h2{
+    text-transform:uppercase;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+    margin-bottom: 3px;
+    
+    
+}
+
+p{
+    text-align: left;
+    font-size: 14px; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+
+ul{
+    margin-right:15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+li{
+    margin-bottom: 9px;
+}
