@@ -43,7 +43,7 @@ Para ejecutar el proyecto en tu máquina local, sigue estos pasos:
 
 1. Clona este repositorio en tu máquina local utilizando Git:
    ```bash
-   git clone https://github.com/tu_usuario/nombre_del_repositorio.git
+   git clone (https://github.com/Analucena53/animacionTierra.git)
    
 2. Abre el archivo index.html en tu navegador preferido.
 
