@@ -2,7 +2,7 @@
 
 Este proyecto es una representación visual interactiva de la **Tierra** y su satélite natural, la **Luna**. Los usuarios pueden observar información básica sobre ambos cuerpos celestes a través de efectos interactivos en el navegador.
 
-### 
+###VER LA WEBSITE en el siguiente enlace:
 https://analucena53.github.io/animacionTierra/
 
 ## Descripción del Proyecto
